@@ -1,7 +1,7 @@
 import PyPDF2
 
-f = open('textFile.txt','w')
-pdfFileObject = open('sampleNameList.pdf', 'rb')
+f = open('nameListTxt.txt', 'w')
+pdfFileObject = open('nameList2.pdf', 'rb')
 pdfReader = PyPDF2.PdfFileReader(pdfFileObject)
 count = pdfReader.numPages
 for i in range(count):
